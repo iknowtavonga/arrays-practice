@@ -12,9 +12,11 @@ numbers.forEach(function (element) {
 
 // For of is a newer way to run through an array
 // we create a variable that runs through numbers array and loops it
+
+/* 
 for (let el of numbers) {
     console.log(el);
-}
+} */
 
 // Using For Each for an array of Objects
 
@@ -40,3 +42,18 @@ const movies = [
 movies.forEach(function (index) {
     console.log(`${index.title} - ${index.score}/100`);
 })
+
+// Map is like a For Each, but it creates a new array which you can save
+const speed = [8, 22, 43, 58, 66];
+
+// we create a new array that takes double of these amounts
+const double = speed.map(function (num) {
+    return num * 2;
+})
+console.log(double);
+
+// Using Map to create an array of movie titles only in our array with objects
+const movieTitle = movies.map(function (index) {
+    return index.title;
+})
+console.log(movieTitle);
