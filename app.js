@@ -57,3 +57,8 @@ const movieTitle = movies.map(function (index) {
     return index.title;
 })
 console.log(movieTitle);
+
+// Arrow functions are a shorter syntax to the long function method
+
+const movieScore = movies.map(index => index.title)
+console.log(movieScore);
