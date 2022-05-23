@@ -62,3 +62,20 @@ console.log(movieTitle);
 
 const movieScore = movies.map(index => index.title)
 console.log(movieScore);
+
+// You can filter through an array with the Filter method. This creates another array
+const goodMovies = movies.filter(index => index.score > 80)
+
+// SOME AND EVERY
+// These 2 methods allow you to search through the array
+
+/* With EVERY, if all the items in the array match the condition, then it evaluates to true
+    If there is any item which doesn't match the condition, then it evaluates to false
+*/
+
+/* With SOME, if any of the items in the array evaluate to true, then it makes the whole statement true */
+const ticket = speed.some(vehicleSpeed => vehicleSpeed > 60);
+
+if (ticket === true) {
+    console.log('You were speeding')
+}
